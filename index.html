@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--links-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="js/index.js"></script>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/boot.scss">
+</head>
+<body>
+  
+            <nav class='sidebar sidebar-menu-collapsed'>
+            <a href='homepage.html' id='justify-icon'>
+                <span class='glyphicon glyphicon-align-justify'></span>
+            </a>
+            <ul>
+                <li class='expandable'>
+                <a class='activate' href='#'>
+                    <span class='glyphicon glyphicon-home collapsed-element'></span>
+                    <span class='expanded-element'>Bosh sahifa</span>
+                </a>
+                </li>
+                <li>
+                <a class='expandable' href='give.html'>
+                    <span class='glyphicon glyphicon-plus'></span>
+                    <span class='expanded-element'>Hadya qilmoq</span>
+                </a>
+                </li>
+                <li>
+                <a class='expandable' href='take.html' >
+                    <span class='glyphicon glyphicon-download'></span>
+                    <span class='expanded-element'>Olmoq</span>
+                </a>
+                </li>
+                <li>
+                <a class='expandable' href='account.html' >
+                    <span class='glyphicon glyphicon-user collapsed-element'></span>
+                    <span class='expanded-element'>Account</span>
+                </a>
+                </li>
+            </ul>
+            <a href='about.html' id='logout-icon'  class="expendable">
+                <span class='glyphicon glyphicon-info-sign'></span>
+            </a>
+            </nav>
+            <h3 class="boshtop">Bosh sahifa</h3>
+
+            <div class="page1text"><span>Hayriya</span><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem quidem totam fugiat est enim corrupti pariatur consectetur dolores, ex harum id a recusandae amet maiores inventore quasi corporis quod quas.</div>
+            <div class="bgarea"></div>
+        <div class="results">
+            <div class="res1"><span>1 </span><br>yillik faoliyat</div>
+            <div class="res2"><span>200 </span><br> kishiga yordam </div>
+            <div class="res3"><span>12 </span><br> viloyatda </div>
+            <div class="res4"><span>30 </span><br>ta ishchi </div>
+        </div>
+
+        <div class="container">
+            <div class="panel-quote">
+              <div class="quote-progress"></div>
+              <div>
+                <blockquote>
+                  <div class="social-share">
+                    <a href="#" id="quote-tweet" title="Tweet this quote" target="_blank">
+                      <i class="fa fa-twitter" aria-hidden="true"></i>
+                    </a>
+                  </div>
+                  <p class="quote"></p>
+                  <p class="author">- <span class="author-name"></span></p>
+                </blockquote> 
+              </div>
+            </div>
+          </div>
+          <div class="about">
+              <h3>Kompaniya haqida</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  ia aliquid numquam ipsa? Impedit consectetur laboriosam
+                  atur perferendis in sint cum fugiat, dicta laudantium 
+                  neque ad assumenda autem accusantium.  reicie
+                   animi nisi repellendus repudiandae, harum earum unde.
+                    Id similique voluptatibus nobis eum hic tenetur nostr
+                    .<span> Nemo voluptates dolor tempore quasi soluta libero fuga, ab vero odit ad, ea eligendi voluptas nihil voluptatem rem dolorum aut. Nihil alias eos, ex minus quia vel ratione itaque? Exceptu
+                   praesentium dolorum provident consequuntur est iure laborum quo, ullam nobis sapiente accusamus consequatur sed, recusandae fugiat necessitatibus modi! Ea atque, praesentium cum, eius deserunt veniam nihil saepe in aut soluta inventore magni at veritatis iure exercitationem, id ipsa ducimus enim sunt nostrum non eveniet natus?</span></p>
+    
+            </div>
+            <section id="contact">
+  
+                <h1 class="section-header">CONTACT</h1>
+                
+                <div class="contact-wrapper">
+                  
+                    <!---------------- 
+              
+                    CONTACT PAGE LEFT 
+                  
+                    -----------------> 
+                  
+                  <form class="form-horizontal" role="form" method="post" action="contact.php">
+                     
+                    <div class="form-group">
+                      <div class="col-sm-12">
+                        <input type="text" class="form-control" id="name" placeholder="NAME" name="name" value="">
+                      </div>
+                    </div>
+              
+                    <div class="form-group">
+                      <div class="col-sm-12">
+                        <input type="email" class="form-control" id="email" placeholder="EMAIL" name="email" value="">
+                      </div>
+                    </div>
+              
+                    <textarea class="form-control" rows="10" placeholder="MESSAGE" name="message" id="textareahome" onkeydown="letterhome()"></textarea>
+                    <div id="pastkiyozuv">0/180</div>
+                    
+                    <button class="button">Send</button>
+                      <div class="right"></div>
+                  </button>
+                    
+                    </button>
+                    
+                  </form>
+                  
+                    <!---------------- 
+              
+                    CONTACT PAGE RIGHT 
+                  
+                    -----------------> 
+                  
+                    <div class="direct-contact-container">
+              
+                      <ul class="contact-list">
+                        <li class="list-item"><i class="fa fa-map-marker fa-2x"><span class="contact-text place">Toshkent, UZ</span></i></li>
+                        
+                        <li class="list-item"><i class="fa fa-phone fa-2x"><span class="contact-text phone"><a href="tel:1-212-555-5555" title="Give me a call">+998991234567</a></span></i></li>
+                        
+                        <li class="list-item"><i class="fa fa-envelope fa-2x"><span class="contact-text gmail"><a href="mailto:#" title="Send me an email">email@gmail.com</a></span></i></li>
+                        
+                      </ul>
+              
+                    
+                      <ul class="social-media-list">
+                        <li><a href="https://github.com/Muhammad-uzbek" target="_blank" class="contact-icon">
+                          <i class="fa fa-github" aria-hidden="true"></i></a>
+                        </li>
+                        <li><a href="https://www.twitter.com/someoniy_uzbek/" target="_blank" class="contact-icon">
+                          <i class="fa fa-twitter" aria-hidden="true"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://www.facebook.com/someoniy/" class="fa fa-facebook"></a>
+                        </li>
+                        <li>
+                          <a href="https://www.instagram.com/muhammad__uzbek" class="fa fa-instagram"></a>
+                        </li>
+                      </ul>
+                      <div class="copyright">&copy; Someoniy</div>
+              
+                    </div>
+                  
+                </div>
+            </section>  
+     </body>
+</html>

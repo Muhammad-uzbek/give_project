@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--links-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="js/index.js"></script>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/boot.scss">
+</head>
+<body>
+    <nav class='sidebar sidebar-menu-collapsed'>
+      <a href='homepage.html' id='justify-icon'>
+        <span class='glyphicon glyphicon-align-justify'></span>
+      </a>
+      <ul>
+        <li class='expandable'>
+          <a class='expandable' href='index.html' title='Dashboard'>
+            <span class='glyphicon glyphicon-home collapsed-element'></span>
+            <span class='expanded-element'>Bosh sahifa</span>
+          </a>
+        </li>
+        <li>
+          <a class='activate' href='#' title='APIs'>
+            <span class='glyphicon glyphicon-plus'></span>
+            <span class='expanded-element'>Hadya qilmoq</span>
+          </a>
+        </li>
+        <li>
+          <a class='expandable' href='take.html' title='Settings'>
+            <span class='glyphicon glyphicon-download'></span>
+            <span class='expanded-element'>Olmoq</span>
+          </a>
+        </li>
+        <li>
+          <a class='expandable' href='account.html' title='about'>
+            <span class='glyphicon glyphicon-user collapsed-element'></span>
+            <span class='expanded-element'>Account</span>
+          </a>
+        </li>
+      </ul>
+      <a href='about.html' id='logout-icon' title='Account' class='expandable'>
+        <span class='glyphicon glyphicon-info-sign'></span>
+      </a>
+    </nav>
+    <h3 class="boshtop">Hadya qilish</h3>
+
+<form class="form">
+    
+        <h2>Maxsulot</h2>
+   <section class="pageleft">
+        <div class="name">
+            <h3>Maxsulot nomi:</h3>
+                    <input type="text" name="name_txt" id="name_pr" placeholder="Maxsulot nomi" onkeydown="letter()">
+                  <div id="pastyoz">0/30</div>
+        </div>         
+        <h3>Maxsulot turini tanlang:</h3>
+
+          <select name="Maxsulot turi" id="typeofpro">
+
+            <optgroup label="Kiyim">
+              <option value="palto_m">Ustki kiyim(Erkak)</option>
+              <option value="palto_w">Ustki kiyim(Ayol</option>
+              <option value="jemfer">Ko'ylak,jemfer(Erkak)</option>
+              <option value="jemfer">ko'ylak,jemfer(Ayol)</option>
+              <option value="bosh_kiyim_m">Bosh Kiyim(Erkak)</option>
+              <option value="bosh_kiyim_w">Bosh Kiyim(Ayol)</option>
+              <option value="down_m">Shim,Triko(Erkak)</option>
+              <option value="down_w">Shim, yubka(Ayol)</option>
+              <option value="oyoq_kiyim_m">Oyoq Kiyim(Erkak)</option>
+              <option value="oyoq_kiyim_w">Oyoq Kiyim(Ayol)</option>
+              <option value="other">Boshqa</option>
+            </optgroup>
+            <optgroup label="Maishiy texnika">
+              <option value="tv">TV</option>
+              <option value="kir_mashina">Kir mashina</option>
+              <option value="dazmol">Dazmol</option>
+              <option value="tefal">Tefal</option>
+              <option value="microwave">Mikrovalnovka</option>
+              <option value="other">Boshqa</option>
+            </optgroup>
+            <optgroup label="Texnika">
+              <option value="noutbuk">Noutbuk</option>
+              <option value="telefon">Telefon</option>
+              <option value="pc">Kompyuter(stolniy)</option>
+              <option value="tefal">Telefon aksesuari</option>
+              <option value="other">Boshqa</option>
+            </optgroup>
+         </select>
+        <h3>Suratini joylang:</h3s>
+        <div class="dropzone" data-width="760" data-height="340" data-resize="true" data-url="canvas.php">
+          <input type="file" name="thumb" />
+        </div>
+        <div class="radiobox">
+          <h3>Maxsulotimni...</h3>
+              <input type="radio" name="amount" id="tekin" onclick="freeOr()">
+              <label for="tekin">Hadya qilaman</label><br>
+              <input type="radio" name="amount" id="pulli" onclick="freeOr()">
+              <label for="pulli">Sotaman</label><br>
+        </div>
+          <div class="narxi" id="narxcont">
+            <h3>Narxi(so'm)</h3>
+            <input type="number" name="narx" id="narx1">
+          </div>
+   </section>
+  <section class="pageright">
+        <div class="nomer">
+            <h3>Telefon raqamingiz:</h3>
+            <input type="number" name="nomer" id="nomer" value="+998">
+        </div>
+        <div class="vil">
+          <h3>Viloyatingiz:</h3>
+          <select name="region" id="region">
+            <option value="tash">Toshkent sh.</option>
+            <option value="nam">Namangan</option>
+            <option value="and">Andijon</option>
+            <option value="far">Farg'ona</option>
+            <option value="Sir">Sirdaryo</option>
+            <option value="jiz">Jizzah </option>
+            <option value="sam">Samarqand</option>
+            <option value="bux">Buxoro</option>
+            <option value="nav">Navoiy</option>
+            <option value="qor">Qoraqalpog'iston</option>
+            <option value="xor">Xorazm</option>
+            <option value="sur">Surxondaryo</option>
+            <option value="qash">Qashqadaryo</option>
+            <option value="tvil">Toshkent viloyati</option>
+          </select>
+        </div>
+        <div class="manzil">
+            <h3>Manzilingiz:</h3>
+            <input type="text" name="manzil" id="manzil" placeholder="Tuman, ko'cha, uy">
+        </div>
+        <div class="batafsil">
+            <h3>Batafsil ma'lumot</h3>
+            <textarea name="more" id="more" cols="40" rows="7" placeholder="Maxsulot haqida batafsil..."></textarea>
+        </div>
+        <button id="subbutton">Jo'natish</button>
+  </section>
+</form>
+  </body>
+</html>
