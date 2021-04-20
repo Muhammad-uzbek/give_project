@@ -1,3 +1,5 @@
 # give_project
+Hayriyaga, bir-biriga narsa sovg'a qilish/arzonroqqa sotishga qaratilgan olx kabi platformani front-endi.
+Bekendini o'rganganimdan keyin qilaman;)
 
-https://sharp-panini-adb16d.netlify.app
+link: https://sharp-panini-adb16d.netlify.app
